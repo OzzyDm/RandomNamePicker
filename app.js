@@ -2,15 +2,15 @@ const drawButton = document.querySelector("#draw");
 const resetButton = document.querySelector("#reset");
 
 function randomSelect() {
-  const winnerEl = document.getElementById("winner");
-  winnerEl.innerHTML = "";
+  const winner = document.getElementById("winner");
+  winner.innerHTML = "";
   const candidates = document.getElementById("name").value;
   if (candidates) {
     const names = candidates.split(/\n/);
     if (names.length > 0) {
       const max = names.length - 1;
       const winnerIndex = getRandomInt(0, max);
-      winnerEl.innerHTML = names[winnerIndex];
+      winner.innerHTML = names[winnerIndex];
     }
   }
 }
@@ -21,4 +21,12 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+let number = 1;
+
+function reset() {
+  winner.innerHTML = "";
+  document.getElementById("name").value = "";
+}
+
 drawButton.addEventListener("click", randomSelect);
+resetButton.addEventListener("click", reset);

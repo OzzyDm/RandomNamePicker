@@ -3,13 +3,24 @@
   padding: 0;
 }
 
-body {
-  height: 100%;
-}
-
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: space-evenly;
+  height: 90vh;
+}
+
+#draw {
+  background-color: green;
+  border-radius: 1em;
+  color: white;
+  padding: 5px 10px;
+}
+
+#reset {
+  background-color: red;
+  border-radius: 1em;
+  color: white;
+  padding: 5px 10px;
 }
