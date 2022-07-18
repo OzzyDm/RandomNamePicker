@@ -9,34 +9,40 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="title">Random Name Picker</h1>
-      <textarea
-        name="name"
-        id="name"
-        cols="30"
-        rows="10"
-        placeholder="Enter all of the names on a seperate line."
-      ></textarea>
-      <div>
-        <label for="number">Number of Winner(s)</label>
-        <select name="number" id="number">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
+      <div class="wrapper">
+        <h1 class="title">Random Name Picker</h1>
+        <textarea
+          name="name"
+          id="name"
+          cols="30"
+          rows="10"
+          placeholder="Enter all of the names on a seperate line."
+        ></textarea>
         <div>
-          <button id="draw">Draw</button>
-          <button id="reset">Reset</button>
+          <label for="number">Number of Winner(s)</label>
+          <select name="number" id="number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <div>
+            <button id="draw">Draw</button>
+            <button id="reset">Reset</button>
+          </div>
+        </div>
+
+        <div class="winner">
+          <h3>Winner is :</h3>
+          <span id="winner"></span>
         </div>
       </div>
-      <h3>Winner is : <span id="winner"></span></h3>
     </div>
   </body>
   <script src="app.js"></script>

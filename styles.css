@@ -1,6 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1532604146921-0e8bd9ab0891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+}
+.title {
+  padding-bottom: 20px;
+  color: rgb(220, 139, 33);
+  -webkit-text-stroke: 1px black;
 }
 
 .container {
@@ -12,15 +21,30 @@
 }
 
 #draw {
-  background-color: green;
+  background-color: rgb(244, 217, 130);
   border-radius: 1em;
-  color: white;
   padding: 5px 10px;
 }
 
 #reset {
-  background-color: red;
+  background-color: rgb(251, 99, 99);
   border-radius: 1em;
-  color: white;
   padding: 5px 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid rgb(44, 33, 158);
+  border-radius: 40px;
+  padding: 50px 30px;
+  background-color: rgba(240, 248, 255, 0.7);
+  text-align: center;
+}
+
+.winner {
+  font-size: large;
+  color: rgb(220, 139, 33);
+  padding-top: 20px;
+  -webkit-text-stroke: 1px black;
 }
