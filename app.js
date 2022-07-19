@@ -21,14 +21,6 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-const winnerNumberSelect = document.querySelector("#number");
-let winnerNumber = 1;
-
-winnerNumberSelect.addEventListener("change", function () {
-  winnerNumber = parseInt(this.value);
-  reset();
-});
-
 function reset() {
   winner.innerHTML = "";
   document.getElementById("name").value = "";

@@ -24,12 +24,25 @@ body {
   background-color: rgb(244, 217, 130);
   border-radius: 1em;
   padding: 5px 10px;
+  margin-top: 20px;
+  margin-right: 30px;
+  font-size: 1em;
+}
+
+#draw:hover {
+  color: white;
+  background-color: rgb(234, 189, 40);
 }
 
 #reset {
   background-color: rgb(251, 99, 99);
   border-radius: 1em;
   padding: 5px 10px;
+  font-size: 1em;
+}
+#reset:hover {
+  color: white;
+  background-color: rgb(247, 58, 58);
 }
 
 .wrapper {
@@ -47,4 +60,20 @@ body {
   color: rgb(220, 139, 33);
   padding-top: 20px;
   -webkit-text-stroke: 1px black;
+}
+
+textarea {
+  border-radius: 30px;
+  border: 2px solid rgb(220, 139, 33);
+  padding: 10px 10px;
+  resize: none;
+}
+
+textarea:focus {
+  outline-color: rgb(220, 139, 33);
+}
+
+#winner {
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
 }
