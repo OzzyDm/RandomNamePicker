@@ -77,3 +77,11 @@ textarea:focus {
   transform: translate(-50%, -50%);
   margin-top: 20px;
 }
+
+span {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 30px;
+}
